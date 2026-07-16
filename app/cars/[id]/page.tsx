@@ -97,14 +97,30 @@ export default async function CarPage({
                   цена на аукционе ~ {formatJpy(car.priceJpy)}
                 </p>
                 <div className="mt-4 flex flex-col gap-2 sm:flex-row">
-                  <Button asChild size="lg" className="flex-1">
+                  {/*<Button asChild size="lg" className="flex-1">
                     <Link href="/#order">Заказать этот авто</Link>
+                  </Button>*/}
+                  <Button
+                    size="lg"
+                    className="flex-1"
+                    render={<Link href="/#order" />}
+                  >
+                    Заказать этот авто
                   </Button>
-                  <Button asChild size="lg" variant="outline">
+                  {/*<Button asChild size="lg" variant="outline">
                     <a href="tel:+78001234567">
                       <Phone className="h-4 w-4" />
                       Позвонить
                     </a>
+                  </Button>*/}
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    nativeButton={false}
+                    render={<a href="tel:+78001234567" />}
+                  >
+                    <Phone className="h-4 w-4" />
+                    Позвонить
                   </Button>
                 </div>
               </div>

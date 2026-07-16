@@ -54,8 +54,12 @@ export function SiteHeader() {
           >
             <Phone className="h-4 w-4 text-accent" />8 800 123-45-67
           </a>
-          <Button asChild size="sm">
-            <Link href="/#order">Подобрать авто</Link>
+          <Button
+            size="sm"
+            nativeButton={false}
+            render={<Link href="/#order" />}
+          >
+            Подобрать авто
           </Button>
         </div>
 
@@ -85,10 +89,12 @@ export function SiteHeader() {
               {l.label}
             </Link>
           ))}
-          <Button asChild className="mt-2">
-            <Link href="/#order" onClick={() => setOpen(false)}>
-              Подобрать авто
-            </Link>
+          <Button
+            className="mt-2"
+            nativeButton={false}
+            render={<Link href="/#order" onClick={() => setOpen(false)} />}
+          >
+            Подобрать авто
           </Button>
         </nav>
       </div>

@@ -26,7 +26,7 @@ export function FaqSection() {
           </p>
         </div>
 
-        <Accordion openMultiple={false} className="w-full">
+        <Accordion multiple={false} className="w-full">
           {faqItems.map((item, i) => (
             <AccordionItem key={i} value={`item-${i}`}>
               <AccordionTrigger className="text-left font-medium">
