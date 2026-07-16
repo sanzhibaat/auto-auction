@@ -103,6 +103,7 @@ export default async function CarPage({
                   <Button
                     size="lg"
                     className="flex-1"
+                    nativeButton={false}
                     render={<Link href="/#order" />}
                   >
                     Заказать этот авто

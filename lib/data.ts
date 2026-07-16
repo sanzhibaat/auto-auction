@@ -72,7 +72,7 @@ export const cars: Car[] = [
     status: "available",
     auctionGrade: "4.5",
     auctionHouse: "USS Tokyo",
-    location: "Владивосток",
+    location: "Улан-Батор",
     featured: true,
     images: [
       img(900, 600, "black toyota mark x sedan front three quarter"),
