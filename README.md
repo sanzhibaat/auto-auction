@@ -2,7 +2,23 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Run Postgres docker
+```bash
+docker run -d --name auction-pg \
+  -e POSTGRES_USER=auction \
+  -e POSTGRES_PASSWORD=auction \
+  -e POSTGRES_DB=auction \
+  -p 5432:5432 \
+  -v auction-pgdata:/var/lib/postgresql/data \
+  postgres:16
+```
+
+Open Postgres in terminal
+```bash
+docker exec -it auction-pg psql -U auction -d auction
+```
+
+Run the development server:
 
 ```bash
 npm run dev

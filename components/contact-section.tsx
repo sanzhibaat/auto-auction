@@ -42,7 +42,7 @@ export function ContactSection() {
             Ответим на любые вопросы о подборе, доставке и растаможке японских авто.
           </p>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          {/*<div className="mt-8 grid gap-4 sm:grid-cols-2">
             {contacts.map((c) => (
               <a
                 key={c.label}
@@ -58,7 +58,7 @@ export function ContactSection() {
                 </span>
               </a>
             ))}
-          </div>
+          </div>*/}
         </div>
 
         <form onSubmit={handleSubmit} className="rounded-xl border border-border bg-card p-6 sm:p-8">

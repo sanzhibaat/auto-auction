@@ -3,6 +3,7 @@ import { Gauge, Fuel, Cog, Star } from "lucide-react";
 import { StatusBadge } from "@/components/status-badge";
 import { formatRub, formatJpy } from "@/lib/calc";
 import type { Car } from "@/lib/data";
+import Image from "next/image";
 
 export function CarCard({ car }: { car: Car }) {
   return (
@@ -10,11 +11,18 @@ export function CarCard({ car }: { car: Car }) {
       href={`/cars/${car.id}`}
       className="group flex flex-col overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-md"
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-muted">
-        <img
-          src={car.images[0] || "/placeholder.svg"}
+      <div className="relative aspect-4/3 overflow-hidden bg-muted">
+        {/* <img
+          src={car.images[0] || "/toyota-mark-x-2014.webp"}
           alt={`${car.make} ${car.model} ${car.year}`}
           className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        /> */}
+        <Image
+          src={car.images[0] || "/placeholder.svg"}
+          alt={`${car.make} ${car.model} ${car.year}`}
+          fill
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="absolute left-3 top-3">
           <StatusBadge status={car.status} />

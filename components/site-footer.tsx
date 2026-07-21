@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Send, MessageCircle } from "lucide-react";
 export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-foreground text-background">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div className="lg:col-span-1">
           <div className="flex items-center gap-2">
             <span className="flex h-8 w-8 items-center justify-center rounded-sm bg-accent text-accent-foreground font-heading text-lg font-bold">
@@ -51,7 +51,7 @@ export function SiteFooter() {
           </ul>
         </div>
 
-        <div>
+        {/*<div>
           <h3 className="text-sm font-semibold">Контакты</h3>
           <ul className="mt-4 space-y-3 text-sm text-background/70">
             <li className="flex items-center gap-2">
@@ -74,7 +74,7 @@ export function SiteFooter() {
               Владивосток, ул. Морская, 12
             </li>
           </ul>
-        </div>
+        </div>*/}
 
         <div>
           <h3 className="text-sm font-semibold">Мы в соцсетях</h3>
@@ -95,10 +95,11 @@ export function SiteFooter() {
             </a>
           </div>
           <p className="mt-6 text-xs text-background/50">
-            Ежедневно с 9:00 до 20:00 (Влд)
+            Ежедневно с 9:00 до 20:00 (Улан-Удэ)
           </p>
         </div>
       </div>
+
       <div className="border-t border-background/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-5 text-xs text-background/50 sm:flex-row sm:px-6 lg:px-8">
           <p>© 2026 Akihabara Motors. Все права защищены.</p>

@@ -75,7 +75,7 @@ export const cars: Car[] = [
     location: "Улан-Батор",
     featured: true,
     images: [
-      img(900, 600, "black toyota mark x sedan front three quarter"),
+      "/toyota-mark-x-2014.webp",
       img(900, 600, "toyota mark x interior dashboard"),
       img(900, 600, "toyota mark x rear view"),
     ],
